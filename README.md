@@ -1,0 +1,1 @@
+First propject about a Market Analysis of SEAT in Spain. It shows an analysis of demand in automobile market, a knowledge of SEAT position with regard its competitors and a identification about the weight of sustainable mobility.
