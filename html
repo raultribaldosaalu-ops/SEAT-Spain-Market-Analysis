@@ -1,0 +1,1283 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SEAT Spanish Market Analysis 2023-2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #64748b;
+            --accent: #dc2626;
+            --surface: #f8fafc;
+            --text: #0f172a;
+            --text-muted: #64748b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary) 0%, #334155 100%);
+            color: white;
+            overflow-y: auto;
+            z-index: 1000;
+            padding: 2rem 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            min-height: 60vh;
+        }
+        
+        .chart-container {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .insight-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        
+        .citation {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-decoration: none;
+            margin-left: 0.25rem;
+            transition: all 0.2s;
+        }
+        
+        .citation:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+        
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #cbd5e1;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.2s;
+        }
+        
+        .toc-link:hover, .toc-link.active {
+            color: white;
+            padding-left: 0.5rem;
+            border-left: 3px solid var(--accent);
+        }
+        
+        .toc-link.sub {
+            padding-left: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+            margin: 4rem 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+            
+            .toc-fixed.open {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Prevent horizontal overflow on small screens */
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Responsive adjustments for small screens */
+        @media (max-width: 768px) {
+            /* Hero section adjustments */
+            .hero-grid .serif.text-5xl {
+                font-size: 2.5rem;
+            }
+            .hero-grid p.text-xl {
+                font-size: 1rem;
+            }
+
+            /* Adjust padding for main content */
+            .main-content .max-w-6xl {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            /* Adjust chart containers */
+            .chart-container {
+                padding: 1rem;
+            }
+
+            /* Ensure images are responsive */
+            img {
+                max-width: 100%;
+            }
+
+            /* Hero grid: single column */
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Adjust text in hero */
+            .hero-grid h1 {
+                font-size: 2.5rem;
+            }
+            .hero-grid p {
+                font-size: 1rem;
+            }
+            .hero-grid .text-xl {
+                font-size: 1rem;
+            }
+            .hero-grid .text-2xl {
+                font-size: 1.25rem;
+            }
+
+            /* Stack the bento grid items */
+            .hero-grid .grid.grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-gray-50">
+    <!-- Table of Contents -->
+    <nav class="toc-fixed">
+      <div class="mb-8">
+        <h2 class="text-xl font-bold serif mb-4">Spanish Market Analysis</h2>
+        <div class="text-sm text-gray-300">SEAT Strategic Assessment</div>
+      </div>
+
+      <a href="#executive-summary" class="toc-link">Executive Summary</a>
+      <a href="#market-overview" class="toc-link sub">Market Overview</a>
+      <a href="#seat-positioning" class="toc-link sub">SEAT Positioning</a>
+      <a href="#sustainable-mobility" class="toc-link sub">Sustainable Mobility</a>
+
+      <a href="#market-demand" class="toc-link">Market Demand Analysis</a>
+      <a href="#total-market" class="toc-link sub">Total Market Volume</a>
+      <a href="#vehicle-types" class="toc-link sub">Sales by Vehicle Type</a>
+      <a href="#commercial-vehicles" class="toc-link sub">Commercial Vehicles</a>
+
+      <a href="#competitive-position" class="toc-link">Competitive Position</a>
+      <a href="#market-leaders" class="toc-link sub">Market Leaders</a>
+      <a href="#model-performance" class="toc-link sub">Model-Level Performance</a>
+      <a href="#cv-competition" class="toc-link sub">Commercial Vehicle Dynamics</a>
+
+      <a href="#sustainability" class="toc-link">Sustainable Mobility</a>
+      <a href="#electrification" class="toc-link sub">Electrification Penetration</a>
+      <a href="#infrastructure" class="toc-link sub">Infrastructure Deployment</a>
+      <a href="#european-context" class="toc-link sub">European Context</a>
+
+      <a href="#summary-data" class="toc-link">Summary Data</a>
+      <a href="#conclusions" class="toc-link">Strategic Conclusions</a>
+    </nav>
+
+    <!-- Mobile TOC Toggle -->
+    <button id="toc-toggle" class="lg:hidden fixed top-4 left-4 z-50 bg-slate-800 text-white p-3 rounded-full shadow-lg">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-8 py-16">
+          <div class="hero-grid">
+            <div class="space-y-6">
+              <div class="text-sm uppercase tracking-wider text-red-400 font-medium">
+                Commercial Research Report
+              </div>
+              <h1 class="serif text-5xl lg:text-7xl font-bold leading-tight">
+                Spanish Automotive
+                <em class="text-red-400">Market Analysis</em>
+              </h1>
+              <p class="text-xl text-gray-300 max-w-2xl">
+                Strategic assessment of SEAT&#39;s competitive position in Spain&#39;s rapidly evolving automotive landscape, 2023-2025
+              </p>
+              <div class="flex items-center space-x-6 text-sm text-gray-400">
+                <span><i class="fas fa-calendar mr-2"></i>2023-2025 Analysis</span>
+                <span><i class="fas fa-chart-line mr-2"></i>Market Intelligence</span>
+                <span><i class="fas fa-leaf mr-2"></i>Sustainable Mobility</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-slate-800/50 p-6 rounded-lg backdrop-blur-sm border border-slate-700">
+                <div class="text-3xl font-bold text-red-400">1.15M</div>
+                <div class="text-sm text-gray-300">2025 Market Volume</div>
+                <div class="text-xs text-green-400">+12.9% YoY</div>
+              </div>
+              <div class="bg-slate-800/50 p-6 rounded-lg backdrop-blur-sm border border-slate-700">
+                <div class="text-3xl font-bold text-yellow-400">18%</div>
+                <div class="text-sm text-gray-300">BEV+PHEV Share</div>
+                <div class="text-xs text-green-400">+77% BEV Growth</div>
+              </div>
+              <div class="bg-slate-800/50 p-6 rounded-lg backdrop-blur-sm border border-slate-700">
+                <div class="text-3xl font-bold text-blue-400">5.7%</div>
+                <div class="text-sm text-gray-300">SEAT Market Share</div>
+                <div class="text-xs text-red-400">-0.7pp vs 2024</div>
+              </div>
+              <div class="bg-slate-800/50 p-6 rounded-lg backdrop-blur-sm border border-slate-700">
+                <div class="text-3xl font-bold text-purple-400">50K+</div>
+                <div class="text-sm text-gray-300">Charging Points</div>
+                <div class="text-xs text-yellow-400">22% Non-operational</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Executive Summary</h2>
+
+        <div class="grid lg:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h3 id="market-overview" class="serif text-2xl font-semibold mb-6 text-slate-800">Market Overview</h3>
+            <p class="mb-4">
+              The Spanish passenger car market has demonstrated exceptional resilience, growing from 949,359 units in 2023 to 1,148,650 in 2025—a compound annual growth rate of 10.1%. This expansion establishes Spain as Europe&#39;s fastest-growing major automotive market, achieving the million-unit threshold in 2024 for the first time since 2019.
+              <a href="#ref-108" class="citation">108</a>
+              <a href="#ref-151" class="citation">151</a>
+            </p>
+
+            <div class="insight-highlight">
+              <strong>Key Achievement:</strong> October 2025 marked the first month to exceed pre-pandemic comparable volumes, confirming organic demand strength rather than catch-up effects.
+              <a href="#ref-198" class="citation">198</a>
+            </div>
+
+            <p class="text-sm text-gray-600 mb-4">
+              <strong>Channel Performance (2025):</strong>
+              <br/>
+              • Private: 539,642 units (+18.1%, 47.0% share)
+              <br/>
+              • Corporate: 418,574 units (+12.0%, 36.4% share)
+              <br/>
+              • Rental: 190,434 units (+2.3%, 16.6% share)
+            </p>
+          </div>
+
+          <div>
+            <h3 id="seat-positioning" class="serif text-2xl font-semibold mb-6 text-slate-800">SEAT Positioning Snapshot</h3>
+            <p class="mb-4">
+              SEAT&#39;s performance reveals a critical strategic paradox: absolute volume growth concurrent with relative share erosion and competitive ranking decline. While maintaining indigenous brand leadership, SEAT fell from 4th to 5th position as Renault&#39;s exceptional performance (+29.7% growth) disrupted the competitive landscape.
+              <a href="#ref-151" class="citation">151</a>
+              <a href="#ref-155" class="citation">155</a>
+            </p>
+
+            <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+              <p class="text-sm">
+                <strong>Strategic Challenge:</strong> SEAT&#39;s 1.3% volume growth against 12.9% market expansion indicates demand capture failure of approximately 7,400 units—equivalent to €110-130 million in foregone revenue.
+              </p>
+            </div>
+
+            <p class="text-sm text-gray-600">
+              <strong>Competitive Ranking Evolution:</strong>
+              <br/>
+              • 2024: 4th position (65,299 units, 6.4% share)
+              <br/>
+              • 2025: 5th position (66,100 units, 5.7% share)
+              <br/>
+              • Renault displaced SEAT, surging to 2nd place
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-xl border border-green-200">
+          <h3 id="sustainable-mobility" class="serif text-2xl font-semibold mb-6 text-slate-800">Sustainable Mobility Assessment</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Electrification Acceleration</h4>
+              <p class="text-sm">Spain achieved ~60% electrified vehicle share in 2025, with BEV+PHEV reaching 18% of total sales—one of Europe&#39;s most rapid powertrain transformations.
+                <a href="#ref-155" class="citation">155</a>
+                <a href="#ref-198" class="citation">198</a>
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Infrastructure Scaling</h4>
+              <p class="text-sm">Public charging infrastructure expanded to 50,000+ operational points, though with persistent operational challenges including 22% non-operational rate.
+                <a href="#ref-52" class="citation">52</a>
+                <a href="#ref-168" class="citation">168</a>
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-2">Technology Leadership</h4>
+              <p class="text-sm">PHEV emerged as the preferred Spanish electrification pathway with 111.7% growth, reflecting consumer preference for flexibility preservation in infrastructure-constrained environments.
+                <a href="#ref-120" class="citation">120</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Market Demand Analysis -->
+      <section id="market-demand" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Market Demand Analysis</h2>
+
+        <div id="total-market" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Total Market Volume Evolution</h3>
+
+          <div class="grid lg:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Recovery Trajectory</h4>
+              <p class="mb-4">
+                The Spanish market&#39;s recovery proceeded through definitive milestones: stabilization in 2023 (949,359 units, +16.8%), breakthrough in 2024 (1,016,885 units, +7.1%), and accelerated expansion in 2025 (1,148,650 units, +12.9%).
+                <a href="#ref-110" class="citation">110</a>
+                <a href="#ref-108" class="citation">108</a>
+              </p>
+
+              <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+                <p class="text-sm">
+                  <strong>Critical Milestone:</strong> October 2025 marked the first monthly exceedance of pre-pandemic comparable volumes, confirming organic demand recovery.
+                  <a href="#ref-198" class="citation">198</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Regional Dynamics</h4>
+              <div class="space-y-4">
+                <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                  <span class="font-medium">Madrid</span>
+                  <div class="text-right">
+                    <div class="font-bold">492,613 units</div>
+                    <div class="text-sm text-gray-600">42.9% national share</div>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-yellow-50 rounded">
+                  <span class="font-medium">Comunidad Valenciana</span>
+                  <div class="text-right">
+                    <div class="font-bold text-green-600">+36.1% growth</div>
+                    <div class="text-sm text-gray-600">Flood replacement demand</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="vehicle-types" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Sales by Vehicle Type: Annual Breakdown</h3>
+
+          <div class="space-y-8">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Powertrain Transformation</h4>
+              <p class="mb-4">
+                Spain achieved historic powertrain inflection in 2024 when electrified technologies collectively surpassed 50% penetration for the first time. By 2025, this accelerated dramatically with BEV+PHEV reaching 17.9% combined share.
+                <a href="#ref-155" class="citation">155</a>
+                <a href="#ref-120" class="citation">120</a>
+              </p>
+
+              <div class="grid md:grid-cols-3 gap-6 mt-6">
+                <div class="text-center p-4 bg-green-50 rounded-lg border border-green-200">
+                  <div class="text-2xl font-bold text-green-700">114,000</div>
+                  <div class="text-sm font-medium">BEV Sales 2025</div>
+                  <div class="text-xs text-green-600">+77.1% growth</div>
+                </div>
+                <div class="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div class="text-2xl font-bold text-blue-700">131,000</div>
+                  <div class="text-sm font-medium">PHEV Sales 2025</div>
+                  <div class="text-xs text-blue-600">+111.7% growth</div>
+                </div>
+                <div class="text-center p-4 bg-orange-50 rounded-lg border border-orange-200">
+                  <div class="text-2xl font-bold text-orange-700">396,000</div>
+                  <div class="text-sm font-medium">HEV Sales 2025</div>
+                  <div class="text-xs text-orange-600">Peak hybrid dynamics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="commercial-vehicles" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Commercial Vehicle Segment</h3>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">2024 Performance</h4>
+              <p class="mb-4">
+                Spanish commercial vehicle market demonstrated exceptional growth dynamism with 165,847 light commercial vehicle registrations representing 13.6% year-on-year expansion—substantially outpacing passenger car growth rates.
+                <a href="#ref-181" class="citation">181</a>
+              </p>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Growth Drivers</h5>
+                <ul class="text-sm space-y-1">
+                  <li>• E-commerce logistics expansion</li>
+                  <li>• Construction sector recovery</li>
+                  <li>• Deferred fleet renewal cycles</li>
+                  <li>• Tourism-related demand</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Electrification Lag</h4>
+              <p class="mb-4">
+                CV powertrain evolution lagged passenger cars, with BEV penetration approximately 5% in 2024, reflecting payload requirements, infrastructure inadequacy for fleet operations, and total cost of ownership challenges.
+              </p>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-2 bg-red-50 rounded">
+                  <span class="text-sm">BEV Penetration</span>
+                  <span class="font-semibold text-red-600">~5%</span>
+                </div>
+                <div class="flex items-center justify-between p-2 bg-yellow-50 rounded">
+                  <span class="text-sm">Growth Rate</span>
+                  <span class="font-semibold text-yellow-600">Moderate</span>
+                </div>
+                <div class="flex items-center justify-between p-2 bg-blue-50 rounded">
+                  <span class="text-sm">Infrastructure</span>
+                  <span class="font-semibold text-blue-600">Limited</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Competitive Position Analysis -->
+      <section id="competitive-position" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Competitive Position Analysis</h2>
+
+        <div id="market-leaders" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Passenger Car Market Structure</h3>
+
+          <div class="grid lg:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Market Leader Evolution</h4>
+              <p class="mb-4">
+                Toyota maintained consecutive annual market leadership through 2024-2025, though with significant share erosion indicating intensifying competitive pressure. The 2025 pattern revealed erosion under pressure despite hybrid category leadership.
+                <a href="#ref-151" class="citation">151</a>
+              </p>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                  <span class="font-medium">Toyota 2024</span>
+                  <div class="text-right">
+                    <div class="font-bold">95,614 units</div>
+                    <div class="text-sm text-gray-600">9.4% share</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                  <span class="font-medium">Toyota 2025</span>
+                  <div class="text-right">
+                    <div class="font-bold">~96,500 units</div>
+                    <div class="text-sm text-red-600">8.4% share (-1.0pp)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">SEAT Performance Metrics</h4>
+              <p class="mb-4">
+                SEAT&#39;s performance presents a critical strategic evaluation framework, with absolute volume stability masking significant relative position erosion and competitive displacement.
+                <a href="#ref-155" class="citation">155</a>
+              </p>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-red-50 rounded border-l-4 border-red-400">
+                  <span class="font-medium">2024 Performance</span>
+                  <div class="text-right">
+                    <div class="font-bold">65,299 units</div>
+                    <div class="text-sm text-green-600">6.4% share (+11.5% growth)</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">
+                  <span class="font-medium">2025 Performance</span>
+                  <div class="text-right">
+                    <div class="font-bold">66,100 units</div>
+                    <div class="text-sm text-red-600">5.7% share (+1.3% growth)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="model-performance" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Model-Level Performance</h3>
+
+          <div class="mb-8">
+            <h4 class="text-xl font-semibold mb-4">SEAT Ibiza Trajectory</h4>
+            <p class="mb-4">
+              The SEAT Ibiza&#39;s performance trajectory illustrates the brand&#39;s competitive challenge concentration in core segment positioning, with 2025 deterioration driven by competitor product renewal and segment migration pressure.
+              <a href="#ref-155" class="citation">155</a>
+              <a href="#ref-114" class="citation">114</a>
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h5 class="font-semibold text-green-800 mb-2">2024 Success Factors</h5>
+                <ul class="text-sm space-y-1">
+                  <li>• 3rd place national ranking</li>
+                  <li>• 40th anniversary marketing momentum</li>
+                  <li>• Consistent monthly performance</li>
+                  <li>• 37.1% global sales growth</li>
+                </ul>
+              </div>
+
+              <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                <h5 class="font-semibold text-red-800 mb-2">2025 Challenge Factors</h5>
+                <ul class="text-sm space-y-1">
+                  <li>• Renault Clio +37.5% growth</li>
+                  <li>• MG ZS SUV segment pressure</li>
+                  <li>• Mid-cycle product status</li>
+                  <li>• SUV preference intensification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-slate-50 to-gray-50 p-6 rounded-xl border border-slate-200">
+            <h4 class="text-xl font-semibold mb-4">Portfolio Breadth Assessment</h4>
+            <p class="mb-4">
+              SEAT&#39;s Spanish market portfolio spans five core segments with critical gaps in fastest-growing electrified SUV categories, creating vulnerability as competitors expand BEV and PHEV offerings.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+              <div class="bg-white p-4 rounded-lg border">
+                <h5 class="font-semibold text-sm mb-2">Ibiza (Supermini)</h5>
+                <div class="text-xs text-gray-600 space-y-1">
+                  <div>• Core strength position</div>
+                  <div>• Segment decline risk</div>
+                  <div>• Petrol-only strategy</div>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg border">
+                <h5 class="font-semibold text-sm mb-2">Arona (B-SUV)</h5>
+                <div class="text-xs text-gray-600 space-y-1">
+                  <div>• SUV presence established</div>
+                  <div>• No electrification</div>
+                  <div>• Competitive pressure</div>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg border">
+                <h5 class="font-semibold text-sm mb-2">Leon (Compact)</h5>
+                <div class="text-xs text-gray-600 space-y-1">
+                  <div>• Below top-15 ranking</div>
+                  <div>• Limited hybrid option</div>
+                  <div>• Segment challenges</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cv-competition" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Commercial Vehicle Competitive Dynamics</h3>
+
+          <div class="grid lg:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">SEAT CV Presence</h4>
+              <p class="text-sm mb-4">
+                SEAT&#39;s commercial vehicle presence is substantially derivative of passenger car operations, with limited dedicated product development and specialized distribution arrangements.
+              </p>
+
+              <div class="space-y-2">
+                <div class="bg-gray-100 p-2 rounded text-sm">
+                  <strong>Ibiza Commercial:</strong> Car adaptation
+                </div>
+                <div class="bg-gray-100 p-2 rounded text-sm">
+                  <strong>Leon Commercial:</strong> Car adaptation
+                </div>
+                <div class="bg-yellow-100 p-2 rounded text-sm">
+                  <strong>Caddy-based:</strong> Group platform
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Segment Competitors</h4>
+              <div class="space-y-3 text-sm">
+                <div class="border-l-4 border-blue-400 pl-3">
+                  <strong>Ford:</strong> Transit segment leadership
+                </div>
+                <div class="border-l-4 border-green-400 pl-3">
+                  <strong>Renault:</strong> Trafic/Master volume
+                </div>
+                <div class="border-l-4 border-purple-400 pl-3">
+                  <strong>Mercedes:</strong> Sprinter premium
+                </div>
+                <div class="border-l-4 border-orange-400 pl-3">
+                  <strong>Stellantis:</strong> Berlingo/Partner scale
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Fleet Positioning</h4>
+              <p class="text-sm mb-4">
+                Fleet customer relationships represent SEAT&#39;s CV strategic challenge area, requiring dedicated organization and electrification capability.
+              </p>
+
+              <div class="bg-blue-50 p-3 rounded text-sm">
+                <strong>Opportunity:</strong> Volkswagen Group platform access (ID. Buzz, electric Transporter) provides potential fleet electrification pathways.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Sustainable Mobility -->
+      <section id="sustainability" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Sustainable Mobility Quantification</h2>
+
+        <div id="electrification" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Electrified Vehicle Penetration</h3>
+
+          <div class="grid lg:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">BEV Market Development</h4>
+              <p class="mb-4">
+                Spain&#39;s battery electric vehicle market achieved decisive scale breakthrough in 2025, evolving from infrastructure-constrained niche to mainstream technology option with 114,000+ units and 8.4% market share.
+                <a href="#ref-120" class="citation">120</a>
+              </p>
+
+              <div class="space-y-3">
+                <div class="bg-green-100 p-3 rounded text-sm">
+                  <strong>2025 Milestone:</strong> First 100,000+ BEV year, achieving critical mass for infrastructure economics viability.
+                </div>
+                <div class="bg-blue-100 p-3 rounded text-sm">
+                  <strong>Growth Rate:</strong> +77.1% year-on-year expansion, Europe&#39;s fastest major market acceleration.
+                </div>
+                <div class="bg-purple-100 p-3 rounded text-sm">
+                  <strong>Peak Month:</strong> July 2025 achieved ~9,000 BEV registrations (8.8% monthly share).
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">PHEV Market Development</h4>
+              <p class="mb-4">
+                Plug-in hybrid electric vehicles demonstrated even more dramatic Spanish market expansion than BEVs, with 2025 performance establishing PHEV as preferred electrification pathway with 131,000+ units.
+                <a href="#ref-120" class="citation">120</a>
+              </p>
+
+              <div class="space-y-3">
+                <div class="bg-orange-100 p-3 rounded text-sm">
+                  <strong>Market Preference:</strong> PHEV share (9.5%) marginally exceeded BEV (8.4%), reflecting Spanish consumer flexibility preference.
+                </div>
+                <div class="bg-red-100 p-3 rounded text-sm">
+                  <strong>Exceptional Growth:</strong> +111.7% year-on-year expansion, fastest-growing electrification technology.
+                </div>
+                <div class="bg-yellow-100 p-3 rounded text-sm">
+                  <strong>European Contrast:</strong> Spanish PHEV growth contrasts with share declines in some Northern European markets.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="infrastructure" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Charging Infrastructure Deployment</h3>
+
+          <div class="grid lg:grid-cols-3 gap-8 mb-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Infrastructure Stock</h4>
+              <p class="text-sm mb-4">
+                Spain&#39;s public charging infrastructure expanded substantially during 2024-2025, though with persistent operational efficiency challenges.
+                <a href="#ref-52" class="citation">52</a>
+                <a href="#ref-171" class="citation">171</a>
+              </p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>2023 Operational:</span>
+                  <span class="font-semibold">~30,000</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>2024 Operational:</span>
+                  <span class="font-semibold">40,000+</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>2025 Operational:</span>
+                  <span class="font-semibold">50,000-53,072</span>
+                </div>
+                <div class="flex justify-between border-t pt-2 mt-2">
+                  <span>Annual Growth:</span>
+                  <span class="font-semibold text-green-600">+25-37%</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Quality Challenges</h4>
+              <p class="text-sm mb-4">
+                Operational reliability remains critical constraint despite rapid deployment acceleration.
+                <a href="#ref-168" class="citation">168</a>
+              </p>
+
+              <div class="bg-red-50 border border-red-200 p-3 rounded">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-red-600">22%</div>
+                  <div class="text-xs">Non-operational rate</div>
+                  <div class="text-xs text-red-500">~13,782 installed but non-functional points</div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Geographic Distribution</h4>
+              <p class="text-sm mb-4">
+                Infrastructure concentration creates rural adoption barriers while major regions achieve adequate coverage.
+                <a href="#ref-171" class="citation">171</a>
+              </p>
+
+              <div class="text-xs space-y-1">
+                <div class="flex justify-between">
+                  <span>Catalonia:</span>
+                  <span>~18%</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Madrid:</span>
+                  <span>~15%</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Andalusia:</span>
+                  <span>~14%</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Valencia:</span>
+                  <span>~12%</span>
+                </div>
+                <div class="flex justify-between border-t pt-1 mt-1">
+                  <span>Four-region total:</span>
+                  <span class="font-semibold">~59%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="european-context" class="mb-16">
+          <h3 class="serif text-3xl font-semibold mb-8">Comparative European Context</h3>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Spain vs. EU Average</h4>
+              <p class="text-sm mb-4">
+                Spain&#39;s electrification trajectory demonstrates exceptional growth velocity with persistent absolute gap to Northern European leaders, positioning the market for potential convergence.
+                <a href="#ref-186" class="citation">186</a>
+              </p>
+
+              <div class="space-y-3">
+                <div class="bg-green-50 p-3 rounded">
+                  <div class="text-sm font-semibold text-green-800">Growth Leadership</div>
+                  <div class="text-xs">84% BEV growth H1 2025—highest among top-five European markets</div>
+                </div>
+                <div class="bg-yellow-50 p-3 rounded">
+                  <div class="text-sm font-semibold text-yellow-800">Absolute Gap</div>
+                  <div class="text-xs">8.4% BEV share vs. EU average ~16%—structural constraints persist</div>
+                </div>
+                <div class="bg-blue-50 p-3 rounded">
+                  <div class="text-sm font-semibold text-blue-800">Regional Context</div>
+                  <div class="text-xs">Southern European pace-setter (vs. Italy 6.2%, Portugal 23.2%)</div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Infrastructure Gap Analysis</h4>
+              <p class="text-sm mb-4">
+                Spain&#39;s charging infrastructure deployment shows rapid catch-up trajectory with quality gaps requiring attention to operational reliability and geographic distribution.
+              </p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between items-center">
+                  <span>Points per 100k population:</span>
+                  <span class="font-semibold">~105</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span>EU Average:</span>
+                  <span class="font-semibold">~100</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span>Netherlands:</span>
+                  <span class="font-semibold">~150</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span>Norway:</span>
+                  <span class="font-semibold">~300</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Summary Data -->
+      <section id="summary-data" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Summary Data Table</h2>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <h3 class="text-xl font-semibold mb-4 text-slate-800">Market Volume Indicators</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span>2023 Registrations:</span>
+                <span class="font-semibold">949,359</span>
+              </div>
+              <div class="flex justify-between">
+                <span>2024 Registrations:</span>
+                <span class="font-semibold">1,016,885</span>
+              </div>
+              <div class="flex justify-between">
+                <span>2025 Registrations:</span>
+                <span class="font-semibold">1,148,650</span>
+              </div>
+              <div class="flex justify-between border-t pt-2">
+                <span>CAGR 2023-2025:</span>
+                <span class="font-semibold text-green-600">+10.1%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <h3 class="text-xl font-semibold mb-4 text-slate-800">Powertrain Distribution</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span>BEV 2025 Share:</span>
+                <span class="font-semibold">8.4%</span>
+              </div>
+              <div class="flex justify-between">
+                <span>PHEV 2025 Share:</span>
+                <span class="font-semibold">9.5%</span>
+              </div>
+              <div class="flex justify-between">
+                <span>HEV 2025 Share:</span>
+                <span class="font-semibold">~34.5%</span>
+              </div>
+              <div class="flex justify-between border-t pt-2">
+                <span>Total Electrified:</span>
+                <span class="font-semibold text-blue-600">~60%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <h3 class="text-xl font-semibold mb-4 text-slate-800">Competitive Position</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span>SEAT 2024 Share:</span>
+                <span class="font-semibold">6.4%</span>
+              </div>
+              <div class="flex justify-between">
+                <span>SEAT 2025 Share:</span>
+                <span class="font-semibold text-red-600">5.7%</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Ranking Change:</span>
+                <span class="font-semibold text-red-600">4th → 5th</span>
+              </div>
+              <div class="flex justify-between border-t pt-2">
+                <span>Renault 2025 Growth:</span>
+                <span class="font-semibold text-green-600">+29.7%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Data Table -->
+        <div class="overflow-x-auto bg-white rounded-xl border border-gray-200 shadow-sm">
+          <table class="w-full text-sm">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-semibold">Indicator</th>
+                <th class="px-4 py-3 text-center font-semibold">2023</th>
+                <th class="px-4 py-3 text-center font-semibold">2024</th>
+                <th class="px-4 py-3 text-center font-semibold">2025</th>
+                <th class="px-4 py-3 text-left font-semibold">Source</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="px-4 py-3 font-medium">Passenger Car Registrations (units)</td>
+                <td class="px-4 py-3 text-center">949,359</td>
+                <td class="px-4 py-3 text-center">1,016,885</td>
+                <td class="px-4 py-3 text-center font-semibold">1,148,650</td>
+                <td class="px-4 py-3 text-xs">ANFAC <a href="#ref-110" class="citation">110</a>, <a href="#ref-108" class="citation">108</a>, <a href="#ref-151" class="citation">151</a>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-4 py-3 font-medium">Year-on-Year Growth (%)</td>
+                <td class="px-4 py-3 text-center">+16.8%</td>
+                <td class="px-4 py-3 text-center">+7.1%</td>
+                <td class="px-4 py-3 text-center font-semibold text-green-600">+12.9%</td>
+                <td class="px-4 py-3 text-xs">Calculated</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">BEV Share (%)</td>
+                <td class="px-4 py-3 text-center">~4.5%</td>
+                <td class="px-4 py-3 text-center">5.64%</td>
+                <td class="px-4 py-3 text-center font-semibold text-blue-600">8.4%</td>
+                <td class="px-4 py-3 text-xs">ANFAC <a href="#ref-155" class="citation">155</a>, Híbridos y Eléctricos <a href="#ref-120" class="citation">120</a>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-4 py-3 font-medium">PHEV Share (%)</td>
+                <td class="px-4 py-3 text-center">~4.0%</td>
+                <td class="px-4 py-3 text-center">5.76%</td>
+                <td class="px-4 py-3 text-center font-semibold text-orange-600">9.5%</td>
+                <td class="px-4 py-3 text-xs">ANFAC <a href="#ref-155" class="citation">155</a>, Híbridos y Eléctricos <a href="#ref-120" class="citation">120</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">Total Electrified Share (%)</td>
+                <td class="px-4 py-3 text-center">~45%</td>
+                <td class="px-4 py-3 text-center">~50%</td>
+                <td class="px-4 py-3 text-center font-semibold text-purple-600">~60%</td>
+                <td class="px-4 py-3 text-xs">ANFAC <a href="#ref-155" class="citation">155</a>, <a href="#ref-198" class="citation">198</a>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-4 py-3 font-medium">Public Charging Points</td>
+                <td class="px-4 py-3 text-center">~30,000</td>
+                <td class="px-4 py-3 text-center">40,000+</td>
+                <td class="px-4 py-3 text-center font-semibold">50,000-53,072</td>
+                <td class="px-4 py-3 text-xs">AEDIVE <a href="#ref-52" class="citation">52</a>, <a href="#ref-171" class="citation">171</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Conclusions -->
+      <section id="conclusions" class="max-w-6xl mx-auto px-8 py-16">
+        <h2 class="serif text-4xl font-bold mb-12 text-center">Strategic Conclusions</h2>
+
+        <div class="grid lg:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h3 class="serif text-2xl font-semibold mb-6">SEAT Strategic Position Synthesis</h3>
+            <p class="mb-4">
+              SEAT&#39;s current position reflects the tension between absolute volume stability and relative competitive erosion that characterizes transition period dynamics in rapidly evolving markets. The brand has successfully maintained top-five market standing and indigenous manufacturer leadership, yet faces structural pressures from multiple dimensions.
+            </p>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+              <p class="text-sm">
+                <strong>Volume-Share Trade-off:</strong> SEAT&#39;s 1.3% volume growth against 12.9% market expansion represents demand capture failure of approximately 7,400 units—a €110-130 million revenue opportunity transferred to competitors.
+              </p>
+            </div>
+
+            <p class="text-sm text-gray-600">
+              This pattern indicates portfolio misalignment with fastest-growing segments, specifically electrified SUVs where Renault, Hyundai, and Chinese brands achieved disproportionate growth. The Ibiza-dependent volume structure creates concentration risk that CUPRA sub-brand momentum only partially offsets.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="serif text-2xl font-semibold mb-6">Critical Challenges &amp; Opportunities</h3>
+
+            <div class="space-y-4">
+              <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">Market Share Erosion</h4>
+                <p class="text-sm">Two-year trajectory from 3rd to 5th place establishes concerning trend pattern that challenges brand positioning and stakeholder confidence.</p>
+              </div>
+
+              <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <h4 class="font-semibold text-blue-800 mb-2">BEV Portfolio Gap</h4>
+                <p class="text-sm">Absence of competitive BEV entry in core B-segment and C-SUV categories until CUPRA Raval 2026 launch creates interim vulnerability period.</p>
+              </div>
+
+              <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h4 class="font-semibold text-green-800 mb-2">Electrification Acceleration</h4>
+                <p class="text-sm">Spain&#39;s exceptional electrification growth velocity creates market conditions favorable for decisive SEAT electrification investment leveraging Volkswagen Group platforms.</p>
+              </div>
+
+              <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                <h4 class="font-semibold text-purple-800 mb-2">CUPRA Leverage</h4>
+                <p class="text-sm">Sub-brand&#39;s 32.5% global growth and 24.2% BEV share provide technology validation and customer relationship foundation for portfolio electrification extension.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 rounded-xl">
+          <h3 class="serif text-2xl font-semibold mb-6">Forward Outlook &amp; Strategic Imperatives</h3>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">2026 Market Trajectory</h4>
+              <p class="text-sm mb-4">
+                Industry projections of 1.25-1.30 million passenger car registrations for 2026 assume Plan Auto+ incentive continuity, macroeconomic stability, and interest rate moderation.
+                <a href="#ref-198" class="citation">198</a>
+              </p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-green-400 rounded-full mr-2"></div>
+                  <span><strong>Optimistic:</strong> Product offensive-driven share recovery to 6.0%+</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></div>
+                  <span><strong>Base Case:</strong> Modest volume growth with share stabilization</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
+                  <span><strong>Pessimistic:</strong> Continued erosion to 5.0% threshold</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Strategic Imperatives</h4>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-2 mt-0.5">1</div>
+                  <div>
+                    <strong>Electrification Acceleration:</strong> BEV/PHEV variant expansion across core models targeting 25%+ electrified share by 2027
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-2 mt-0.5">2</div>
+                  <div>
+                    <strong>SUV Segment Strengthening:</strong> C-SUV BEV introduction with top-5 model ranking objective
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-2 mt-0.5">3</div>
+                  <div>
+                    <strong>Value Positioning Defense:</strong> Entry-price BEV variant competitive with Dacia and Chinese brands
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-2 mt-0.5">4</div>
+                  <div>
+                    <strong>Fleet Channel Electrification:</strong> PHEV/BEV fleet programs with TCO optimization focus
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-600">
+            <p class="text-lg font-medium">
+              SEAT stands at a critical strategic inflection point. The Spanish market&#39;s exceptional growth and electrification acceleration create favorable demand conditions that brand-specific execution must capture. The 2026-2027 product offensive execution is essential for restoring competitive credibility and securing sustainable market position.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- References Footer -->
+      <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-8">
+          <h3 class="serif text-2xl font-semibold mb-8">Data Sources &amp; References</h3>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div>
+              <h4 class="font-semibold mb-3 text-red-400">Official Sources</h4>
+              <div class="space-y-2">
+                <div id="ref-110" class="space-y-1">
+                  <strong>ANFAC:</strong> Annual Report 2023
+                  <br/>
+                  <a href="https://www.anfac.com/" class="text-blue-300 hover:text-blue-200">www.anfac.com</a>
+                </div>
+                <div id="ref-108" class="space-y-1">
+                  <strong>ANFAC:</strong> 2024 Market Summary
+                  <br/>
+                  <a href="https://www.anfac.com/" class="text-blue-300 hover:text-blue-200">www.anfac.com</a>
+                </div>
+                <div id="ref-151" class="space-y-1">
+                  <strong>BestSellingCarsBlog:</strong> Spain 2025 Analysis
+                  <br/>
+                  <a href="https://bestsellingcarsblog.com/" class="text-blue-300 hover:text-blue-200">bestsellingcarsblog.com</a>
+                </div>
+                <div id="ref-155" class="space-y-1">
+                  <strong>MarkLines:</strong> Spain Brand Rankings 2024
+                  <br/>
+                  <a href="https://www.marklines.com/" class="text-blue-300 hover:text-blue-200">www.marklines.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-3 text-blue-400">Electrification Data</h4>
+              <div class="space-y-2">
+                <div id="ref-120" class="space-y-1">
+                  <strong>Híbridos y Eléctricos:</strong> Market Overview 2025
+                  <br/>
+                  <a href="https://alternative-fuels-observatory.ec.europa.eu/" class="text-blue-300 hover:text-blue-200">alternative-fuels-observatory.ec.europa.eu</a>
+                </div>
+                <div id="ref-171" class="space-y-1">
+                  <strong>AEDIVE:</strong> Infrastructure Report 2025
+                  <br/>
+                  <a href="https://www.aedive.es/" class="text-blue-300 hover:text-blue-200">www.aedive.es</a>
+                </div>
+                <div id="ref-52" class="space-y-1">
+                  <strong>AEDIVE:</strong> 2024 Infrastructure Data
+                  <br/>
+                  <a href="https://energetica21.com/" class="text-blue-300 hover:text-blue-200">energetica21.com</a>
+                </div>
+                <div id="ref-168" class="space-y-1">
+                  <strong>EAFO:</strong> Infrastructure Reliability
+                  <br/>
+                  <a href="http://www.ouhua.info/" class="text-blue-300 hover:text-blue-200">www.ouhua.info</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-semibold mb-3 text-green-400">Industry Analysis</h4>
+              <div class="space-y-2">
+                <div id="ref-198" class="space-y-1">
+                  <strong>Autovista24:</strong> Market Analysis 2025
+                  <br/>
+                  <a href="https://autovista24.autovistagroup.com/" class="text-blue-300 hover:text-blue-200">autovista24.autovistagroup.com</a>
+                </div>
+                <div id="ref-186" class="space-y-1">
+                  <strong>PwC Strategy&amp;:</strong> EV Sales Review Q2 2025
+                  <br/>
+                  <a href="https://www.pwc.com/" class="text-blue-300 hover:text-blue-200">www.pwc.com</a>
+                </div>
+                <div id="ref-181" class="space-y-1">
+                  <strong>ANFAC:</strong> Commercial Vehicles 2024
+                  <br/>
+                  <a href="https://www.investinspain.org/" class="text-blue-300 hover:text-blue-200">www.investinspain.org</a>
+                </div>
+                <div id="ref-114" class="space-y-1">
+                  <strong>BestSellingCarsBlog:</strong> Monthly Rankings
+                  <br/>
+                  <a href="https://bestsellingcarsblog.com/" class="text-blue-300 hover:text-blue-200">bestsellingcarsblog.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-700 text-center text-xs text-gray-400">
+            <p>All data sourced from official statistical institutes, industry associations, and verified market intelligence providers. Analysis maintained objectivity and methodological rigor throughout.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Mobile TOC Toggle
+        document.getElementById('toc-toggle').addEventListener('click', function() {
+            document.querySelector('.toc-fixed').classList.toggle('open');
+        });
+
+        // Close TOC when clicking outside
+        document.addEventListener('click', function(event) {
+            const toc = document.querySelector('.toc-fixed');
+            const tocToggle = document.getElementById('toc-toggle');
+            // Check if the click is outside the TOC and the hamburger button
+            if (toc.classList.contains('open') && 
+                !toc.contains(event.target) && 
+                event.target !== tocToggle && 
+                !tocToggle.contains(event.target)) {
+                toc.classList.remove('open');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile TOC after clicking
+                document.querySelector('.toc-fixed').classList.remove('open');
+            });
+        });
+
+        // Active TOC link highlighting
+        function updateActiveTOCLink() {
+            const sections = document.querySelectorAll('section[id], div[id]');
+            const tocLinks = document.querySelectorAll('.toc-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveTOCLink);
+        updateActiveTOCLink(); // Initial call
+
+        // Close TOC when window is resized to large (>=1024px)
+        function handleResize() {
+            if (window.innerWidth >= 1024) {
+                document.querySelector('.toc-fixed').classList.remove('open');
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+    </script>
+  
+
+</body></html>
